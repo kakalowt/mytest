@@ -48,9 +48,9 @@ DWORD WINAPI func1(void* p)
 		for(int i=0; i<g_nLoopCnt; i++)
 		{
 			
-			/*InterlockedIncrement((long*)&g_dw1);			
+			InterlockedIncrement((long*)&g_dw1);			
 			InterlockedExchange((long*)&g_dw2, g_dw1);
-			InterlockedExchangeAdd((long*)&g_dw3, 2425);*/
+			InterlockedExchangeAdd((long*)&g_dw3, 2425);
 
 			/*AcquireSRWLockExclusive(&g_srwl);
 			g_dw1++;
