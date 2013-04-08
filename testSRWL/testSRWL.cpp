@@ -75,7 +75,7 @@ DWORD WINAPI func1(void* p)
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	/*InitializeSRWLock(&(g_srwl));
+	InitializeSRWLock(&(g_srwl));
 	g_pti = new TESTITEM[200000];
 	
 	DWORD dwLast = GetTickCount();
@@ -99,9 +99,9 @@ int _tmain(int argc, _TCHAR* argv[])
 		printf("main() %d\n", ++nstep);
 		Sleep(1000);
 	}
-	return 0;*/
+	return 0;
 
-	InitializeSRWLock(&g_srwl);
+	/*InitializeSRWLock(&g_srwl);
 	g_hEvent1 = CreateEvent(NULL, TRUE, FALSE, NULL);
 	g_hEvent2 = CreateEvent(NULL, TRUE, FALSE, NULL);
 	for(int i=0; i<g_nThreadCnt; i++)
@@ -135,7 +135,7 @@ AAAA:
 	printf("Press any key......!\n");
 	getchar();	
 	goto AAAA;
-	return 0;
+	return 0;*/
 }
 
 
