@@ -52,7 +52,7 @@ DWORD WINAPI func1(void* p)
 			InterlockedExchange((long*)&g_dw2, g_dw1);
 			InterlockedExchangeAdd((long*)&g_dw3, 2425);
 
-			/*AcquireSRWLockExclusive(&g_srwl);
+			AcquireSRWLockExclusive(&g_srwl);
 			g_dw1++;
 			ReleaseSRWLockExclusive(&g_srwl);
 			AcquireSRWLockExclusive(&g_srwl);
@@ -60,7 +60,7 @@ DWORD WINAPI func1(void* p)
 			ReleaseSRWLockExclusive(&g_srwl);
 			AcquireSRWLockExclusive(&g_srwl);
 			g_dw3++;
-			ReleaseSRWLockExclusive(&g_srwl);*/
+			ReleaseSRWLockExclusive(&g_srwl);
 
 			g_dw1++;
 			g_dw2++;
