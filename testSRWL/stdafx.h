@@ -11,6 +11,8 @@
 #include <tchar.h>
 #include <string>
 #include <strings.h>
+#include <stdio.h>
+
 using namespace std;
 
 

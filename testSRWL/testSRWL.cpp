@@ -62,9 +62,9 @@ DWORD WINAPI func1(void* p)
 			g_dw3++;
 			ReleaseSRWLockExclusive(&g_srwl);
 
-			g_dw1++;
+			/*g_dw1++;
 			g_dw2++;
-			g_dw3++;
+			g_dw3++;*/
 			
 		}
 		InterlockedIncrement((long*)&g_dw4);
